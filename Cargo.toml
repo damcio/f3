@@ -12,7 +12,7 @@ version = "0.5.3"
 [dependencies]
 l3gd20 = "0.1.2"
 lsm303dlhc = "0.1.2"
-stm32f30x-hal = "0.1.2"
+stm32f30x-hal = {version="0.1.2", path="../stm32f30x-hal"}
 
 [dev-dependencies]
 aligned = "0.1.1"
@@ -44,6 +44,7 @@ version = "0.1.1"
 [dev-dependencies.stm32f30x-hal]
 features = ["rt"]
 version = "0.1.1"
+path="../stm32f30x-hal"
 
 [features]
 rt = ["stm32f30x-hal/rt"]
